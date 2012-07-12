@@ -165,7 +165,7 @@ class DSLReaderTest < Test::Unit::TestCase
   end
 
   def test_factory_loads_file
-    reader = Authorization::Reader::DSLReader.factory((DA_ROOT + "authorization_rules.dist.rb").to_s)
+    reader = Authorization::Reader::DSLReader.factory(File.expand_path("../../../authorization_rules.dist.rb", __FILE__))
     assert_equal(Authorization::Reader::DSLReader, reader.class)
   end
 

@@ -1,5 +1,5 @@
 # Authorization::AuthorizationInController
-require File.dirname(__FILE__) + '/authorization.rb'
+require 'declarative_authorization/authorization.rb'
 
 module Authorization
   module AuthorizationInController

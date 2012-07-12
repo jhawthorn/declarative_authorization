@@ -1,6 +1,6 @@
 # Authorization::Reader
 
-require File.dirname(__FILE__) + '/authorization.rb'
+require 'declarative_authorization/authorization'
 
 module Authorization
   # Parses an authorization configuration file in the authorization DSL and

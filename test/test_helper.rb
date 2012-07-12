@@ -18,14 +18,14 @@ MissingSourceFile::REGEXPS.push([/^cannot load such file -- (.+)$/i, 1])
 
 puts "Testing against rails #{Rails::VERSION::STRING}"
 
-RAILS_ROOT = File.dirname(__FILE__)
+RAILS_ROOT = File.dirname(__FILE__) unless defined?(RAILS_ROOT)
 
-DA_ROOT = Pathname.new(File.expand_path("..", File.dirname(__FILE__)))
+$:.unshift File.expand_path("../lib", File.dirname(__FILE__))
 
-require DA_ROOT + File.join(%w{lib declarative_authorization rails_legacy})
-require DA_ROOT + File.join(%w{lib declarative_authorization authorization})
-require DA_ROOT + File.join(%w{lib declarative_authorization in_controller})
-require DA_ROOT + File.join(%w{lib declarative_authorization maintenance})
+require 'declarative_authorization/rails_legacy'
+require 'declarative_authorization/authorization'
+require 'declarative_authorization/in_controller'
+require 'declarative_authorization/maintenance'
 
 begin
   require 'ruby-debug'

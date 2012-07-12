@@ -1,5 +1,5 @@
 # Authorization
-require File.dirname(__FILE__) + '/reader.rb'
+require 'declarative_authorization/reader'
 require "set"
 require "forwardable"
 

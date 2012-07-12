@@ -1,6 +1,6 @@
 # Authorization::AuthorizationInModel
-require File.dirname(__FILE__) + '/authorization.rb'
-require File.dirname(__FILE__) + '/obligation_scope.rb'
+'declarative_authorization/authorization'
+'declarative_authorization/obligation_scope'
 
 module Authorization
   

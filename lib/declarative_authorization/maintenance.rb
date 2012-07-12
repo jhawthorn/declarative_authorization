@@ -1,5 +1,5 @@
 # Authorization::Maintenance
-require File.dirname(__FILE__) + '/authorization.rb'
+require 'declarative_authorization/authorization'
 
 module Authorization
   # Provides a few maintenance methods for modifying data without enforcing

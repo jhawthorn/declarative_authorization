@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), %w{development_support})
+require 'declarative_authorization/development_support/development_support'
 
 begin
   require "ruby_parser"

@@ -1,8 +1,8 @@
 if Authorization::activate_authorization_rules_browser?
 
-require File.join(File.dirname(__FILE__), %w{.. .. lib declarative_authorization development_support analyzer})
-require File.join(File.dirname(__FILE__), %w{.. .. lib declarative_authorization development_support change_supporter})
-require File.join(File.dirname(__FILE__), %w{.. .. lib declarative_authorization development_support development_support})
+require 'declarative_authorization/development_support/analyzer'
+require 'declarative_authorization/development_support/change_supporter'
+require 'declarative_authorization/development_support/development_support'
 
 begin
   # for nice auth_rules output:
