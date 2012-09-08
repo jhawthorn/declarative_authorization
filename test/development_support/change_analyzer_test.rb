@@ -1,5 +1,5 @@
 require 'test_helper'
-require File.join(File.dirname(__FILE__), %w{.. .. lib declarative_authorization development_support change_analyzer})
+require 'declarative_authorization/development_support/change_analyzer'
 
 
 class ChangeAnalyzerTest < Test::Unit::TestCase

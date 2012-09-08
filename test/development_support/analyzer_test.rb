@@ -2,7 +2,7 @@ require 'test_helper'
 
 auth_analyzer_loadable = false
 begin
-  require File.join(File.dirname(__FILE__), %w{.. .. lib declarative_authorization development_support analyzer})
+  require 'declarative_authorization/development_support/analyzer'
   auth_analyzer_loadable = true
 rescue
   puts "Could not load Authorization::DevelopmentSupport::Analyzer.  Disabling AuthorizationRulesAnalyzerTest."

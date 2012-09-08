@@ -1,5 +1,5 @@
 require 'test_helper'
-require File.join(File.dirname(__FILE__), %w{.. lib declarative_authorization helper})
+require 'declarative_authorization/helper'
 
 
 class HelperMocksController < MocksController

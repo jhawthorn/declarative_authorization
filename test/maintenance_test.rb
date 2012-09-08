@@ -1,5 +1,5 @@
 require 'test_helper'
-require File.join(File.dirname(__FILE__), %w{.. lib declarative_authorization maintenance})
+require 'declarative_authorization/maintenance'
 
 class MaintenanceTest < Test::Unit::TestCase
   include Authorization::TestHelper

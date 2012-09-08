@@ -1,6 +1,6 @@
 if Authorization::activate_authorization_rules_browser?
 
-require File.join(File.dirname(__FILE__), %w{.. .. lib declarative_authorization maintenance})
+require 'declarative_authorization/maintenance'
 
 class AuthorizationUsagesController < ApplicationController
   unloadable
